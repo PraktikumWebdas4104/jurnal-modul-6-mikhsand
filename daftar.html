@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Registrasi</title>
+</head>
+<body>
+	<h2>Form</h2>
+
+	<form action="proses.php" method="POST">
+		<table>
+			<tr>
+				<td>NIM :</td>
+				<td><input type="text" name="nim" maxlength="10"></td>
+			</tr>
+
+			<tr>
+				<td>Nama :</td>
+				<td><input type="text" name="nama"></td>
+			</tr>
+
+			<tr>
+				<td>Password :</td>
+				<td><input type="password" name="pass"></td>
+			</tr>
+
+			<tr>
+				<td>Kelas :</td>
+				<td>
+					<input type="radio" name="kelas" value="MI01">MI01
+					<input type="radio" name="kelas" value="MI02">MI02
+					<input type="radio" name="kelas" value="MI03">MI03
+					<input type="radio" name="kelas" value="MI04">MI04
+				</td>
+			</tr>
+
+			<tr>
+				<td>Jenis Kelamin :</td>
+				<td>
+					<input type="radio" name="kelamin" value="Laki-Laki">Laki-Laki
+					<input type="radio" name="kelamin" value="Perempuan">Perempuan
+				</td>
+			</tr>
+
+			<tr>
+				<td>Alamat :</td>
+				<td><textarea name="alamat"></textarea></td>
+			</tr>
+			
+			<tr>
+				<td>Fakultas :</td>
+				<td>
+					<select name="fakultas" default="pilih">
+						<option value="Rekayasa Industri">Rekayasa Industri</option>
+						<option value="Informatika">Informatika</option>
+						<option value="Teknik Elektro">Teknik Elektro</option>
+						<option value="Ekonomi dan Bisnis">Ekonomi dan Bisnis</option>
+						<option value="Komunikasi dan Bisnis">Komunikasi dan Bisnis</option>
+						<option value="Industri Kreatif">Industri Kreatif</option>
+					</select>
+				</td>	
+			</tr>
+
+			<tr>
+				<td>Hobi :</td>
+				<td>
+					<input type="checkbox" name="hobi[]" value="Masak">Masak
+					<input type="checkbox" name="hobi[]" value="Futsal">Futsal
+					<input type="checkbox" name="hobi[]" value="Gaming">Gaming
+					<input type="checkbox" name="hobi[]" value="Baca">Baca
+					<input type="checkbox" name="hobi[]" value="Musik">Musik
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td><input type="submit" name="submit" value="send"></td>
+			</tr>
+
+		</table>
+	</form>
+</body>
+</html>
